@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Employee Data</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Employee Data</h2>
+        <form id="uploadForm" method="post" action="upload_data.php">
+            <label for="emp_id">Employee ID:</label>
+            <input type="text" id="emp_id" name="emp_id" required><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required><br><br>
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
